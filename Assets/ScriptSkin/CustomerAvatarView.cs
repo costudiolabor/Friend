@@ -2,17 +2,14 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CustomerAvatarView : View
-{
+public class CustomerAvatarView : View {
     [SerializeField] private Button buttonBack;
     [SerializeField] private Button buttonDone;
     [SerializeField] private Toggle hair;
     [SerializeField] private Toggle skin;
     [SerializeField] private Toggle eyes;
 
-    public event Action ButtonBackEvent;
-    public event Action ButtonDoneEvent;
-
+    public event Action ButtonBackEvent ,ButtonDoneEvent;
     public event Action<bool> SelectHairEvent, SelectSkinEvent, SelectEyesEvent;
 
     public void Initialize() {

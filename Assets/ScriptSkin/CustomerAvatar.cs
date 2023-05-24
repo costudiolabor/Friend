@@ -7,8 +7,7 @@ public class CustomerAvatar {
    [SerializeField] private Gallery gallery;
    [SerializeField] private GalleryColor galleryColor;
    
-   public event Action ButtonBackEvent;
-   public event Action ButtonDoneEvent;
+   public event Action ButtonBackEvent, ButtonDoneEvent;
    public event Action<int> SetHairEvent, SetColHairEvent, SetSkinEvent, SetColEyes;
 
    private SettingsModel _settingsModel;

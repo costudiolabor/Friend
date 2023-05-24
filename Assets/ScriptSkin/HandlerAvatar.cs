@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HandlerAvatar : MonoBehaviour {
@@ -8,30 +7,6 @@ public class HandlerAvatar : MonoBehaviour {
     [SerializeField] private SkinnedMeshRenderer clothingPants;
     [SerializeField] private SkinnedMeshRenderer clothingShoes;
 
-    // [SerializeField] private Hair hairs;
-    // [SerializeField] private Skins skins;
-    // [SerializeField] private Eyes eyes;
-    // [SerializeField] private Tops tops;
-    // [SerializeField] private Pants pants;
-    // [SerializeField] private Shoes shoes;
-
-    //public Hair GetHairs() {
-      //  return hairs;
-  //  }
-    
-  //  public List<Material> GetMaterials() {
-       // return GetHairs().GetItems().materials;
-   // }
-    
-   // public List<Material> GetSkins() {
-       // return skins.GetSkins();
-   // }
-
-    //public List<Material> GetEyes()
- //   {
-      //  return eyes.GetEyes();
-  //  }
-    
     public void SetColSkin(Material material) {
         var sharedMaterials = avatar.sharedMaterials;
         sharedMaterials[0] = material;
@@ -68,9 +43,9 @@ public class HandlerAvatar : MonoBehaviour {
     
     public void SetColTop(int i) {
         //var item = tops.GetItems();
-        var sharedMaterials = clothingTop.sharedMaterials;
+        //var sharedMaterials = clothingTop.sharedMaterials;
         //sharedMaterials[0] = material;
-        clothingTop.sharedMaterials = sharedMaterials;
+        //clothingTop.sharedMaterials = sharedMaterials;
     }
    
     public void SetPants(int i) {
@@ -78,12 +53,11 @@ public class HandlerAvatar : MonoBehaviour {
         //clothingPants.sharedMesh = item[i].mesh;
     }
     
-    public void SetColPants(int i)
-    {
+    public void SetColPants(int i) {
         //var item = pants.GetItems();
         //var material = pants.GetItems()[_pants].materials[i];
-        var sharedMaterials = clothingPants.sharedMaterials;
+        //var sharedMaterials = clothingPants.sharedMaterials;
         //sharedMaterials[0] = material;
-        clothingPants.sharedMaterials = sharedMaterials;
+        //clothingPants.sharedMaterials = sharedMaterials;
     }
 }

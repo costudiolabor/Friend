@@ -3,8 +3,7 @@ using UnityEngine;
 using Object = UnityEngine.GameObject;
 
 [Serializable]
-public class SettingAvatar
-{
+public class SettingAvatar {
     [SerializeField] private SettingAvatarView settingAvatarView;
     [SerializeField] private SettingsModel settingFemale;
     [SerializeField] private SettingsModel settingsMale;
@@ -20,14 +19,14 @@ public class SettingAvatar
     private HandlerAvatar _currentAvatar;
     private SettingsModel _currentSettingModel;
 
-    public void Initialize()
-    {
-
+    public void Initialize() {
         settingAvatarView.DragEvent += RotateAvatar;
+        
         chooseNameGender.Initialize();
         chooseNameGender.ChooseAvatarEvent += ChooseAvatar;
         chooseNameGender.EndEditNameEvent += SetName;
         chooseNameGender.DoneEvent += DoneGender;
+        
         customerAvatar.Initialize();
         customerAvatar.ButtonBackEvent += BackCustomer; 
         customerAvatar.ButtonDoneEvent += DoneCustomer;
@@ -45,8 +44,7 @@ public class SettingAvatar
         _currentAvatar.transform.Rotate(0.0f, rotateY,0.0f);
     }
     
-    private void ChooseAvatar(Gender gender)
-    {
+    private void ChooseAvatar(Gender gender) {
         HandlerAvatar currentPrefab = null;
         switch (gender) {
             case Gender.Male:

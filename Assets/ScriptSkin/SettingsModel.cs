@@ -2,11 +2,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "SettingsModel", menuName = "Create SettingsModel", order = 1)]
-public class SettingsModel : ScriptableObject
-{
+public class SettingsModel : ScriptableObject {
    [SerializeField] private Hair hair;
    [SerializeField] private MaterialsAvatar materialsEyes;
-   //[SerializeField] private MaterialsAvatar materialsHair;
    [SerializeField] private MaterialsAvatar materialsSkin;
    [SerializeField] private Clothes tops;
    [SerializeField] private Clothes pants;
